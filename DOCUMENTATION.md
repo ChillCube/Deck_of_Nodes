@@ -1,5 +1,5 @@
 # Deck of Nodes API Reference
-Generated: 2026-03-10
+Generated: 2026-04-28
 
 An addon for managing a list of nodes. Useful for card games
 
