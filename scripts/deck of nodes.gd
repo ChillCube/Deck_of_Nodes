@@ -26,3 +26,4 @@ func get_node_front() -> Node:
 ## Takes out a node from the deck from the back
 func get_node_back() -> Node:
 	return deck_of_scenes.pop_back().instantiate()
+
