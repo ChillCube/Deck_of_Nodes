@@ -2,12 +2,12 @@
 extends Resource
 class_name DeckOfNodes
 
-@export var deck_of_scenes : Array[PackedScene]
+@export var deck_of_scenes : Array[PackedScene] ## The ordered list of PackedScenes that make up this deck
 
-func append_packed_scene(packed_scene : PackedScene) -> void:
+func append_packed_scene(packed_scene : PackedScene) -> void: ## Adds a PackedScene to the back of the deck
 	deck_of_scenes.append(packed_scene)
 
-func insert_packed_scene(position : int, packed_scene : PackedScene) -> void:
+func insert_packed_scene(position : int, packed_scene : PackedScene) -> void: ## Inserts a PackedScene at the given index, shifting later entries back
 	deck_of_scenes.insert(position, packed_scene)
 
 ## Shuffles the nodes stored in the deck
