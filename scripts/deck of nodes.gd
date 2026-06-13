@@ -16,8 +16,7 @@ func shuffle_nodes() -> void:
 
 ## Takes out a random node in the deck, removing it from the deck
 func get_node_random() -> Node:
-	var new_scene : Node2D = deck_of_scenes.pop_at(randi_range(0, deck_of_scenes.size()-1))
-	return new_scene.instantiate()
+	return deck_of_scenes.pop_at(randi_range(0, deck_of_scenes.size()-1)).instantiate()
 
 ## Takes out a node in the deck from the front
 func get_node_front() -> Node:
@@ -26,4 +25,3 @@ func get_node_front() -> Node:
 ## Takes out a node from the deck from the back
 func get_node_back() -> Node:
 	return deck_of_scenes.pop_back().instantiate()
-
